@@ -100,11 +100,13 @@ export const EndDate = ({ e }) => {
           color: COLORS.primary,
         }}
       >
-        {e}
+        {/* {e} */}
+        12hr 15min
       </Text>
     </View>
   );
 };
+
 export const SubInfo = ({ endTime }) => {
   return (
     <View

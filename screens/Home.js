@@ -4,12 +4,11 @@ import { View, FlatList, SafeAreaView, Text } from "react-native";
 import { COLORS, FONTS, NFTData, SIZES } from "../constants";
 import { NFTCard, HomeHeader, FocusedStatusBar } from "../components";
 import Position from "react-native/Libraries/Components/Touchable/Position";
-
+import { StatusBar } from "react-native";
 export const Home = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <FocusedStatusBar background={COLORS.primary} />
-
+      <FocusedStatusBar background={COLORS.secondary} />
       <View style={{ flex: 1 }}>
         <View style={{ zIndex: 0 }}>
           <FlatList
@@ -34,7 +33,6 @@ export const Home = () => {
           <View style={{ height: 300, backgroundColor: COLORS.primary }} />
           <View style={{ flex: 1, backgroundColor: COLORS.white }} />
         </View>
-     
       </View>
     </SafeAreaView>
   );
